@@ -1,9 +1,10 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 from datetime import datetime
 
 
 def welcome(request):
-    return HttpResponse('Welome to Meeting planner')
+    return render(request,'website/welcome.html')
 # Create your views here.
 
 
