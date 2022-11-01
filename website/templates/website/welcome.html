@@ -20,7 +20,7 @@
     <ul>
       {% for meeting in meetings %}
       <li>
-        <a href="/meetings/{{ meeting.id }}"> {{ meeting.title }} </a>
+        <a href="{% url 'detail' meeting.id %}"> {{ meeting.title }} </a>
       </li>
       {% endfor %}
     </ul>
